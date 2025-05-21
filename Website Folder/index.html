@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Feux HTML Template">
+
+  <title>Radiel Health</title>
+
+  <!-- Fav Icon -->
+  <link rel="icon" type="image/x-icon" href="assets/imgs/logo/favicon.png">
+
+
+
+
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendor/all.min.css">
+  <link rel="stylesheet" href="assets/vendor/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/vendor/progressbar.css">
+  <link rel="stylesheet" href="assets/vendor/meanmenu.min.css">
+  <link rel="stylesheet" href="assets/vendor/magnific-popup.css">
+  <link rel="stylesheet" href="assets/vendor/animate.min.css">
+  <link rel="stylesheet" href="assets/vendor/nice-select.css">
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Custom styles for equal sizing -->
+  <style>
+    .about-area-6 .section-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .about-area-6 .thumb.thumb-3 {
+      flex: 1;
+      max-width: 33.333%;
+      margin: 0;
+    }
+
+    .about-area-6 {
+      padding-bottom: 50px;   /* Reduced padding */
+      margin-bottom: 60px;    /* Back to original margin */
+      position: relative;     /* Ensure proper stacking */
+      z-index: 1;            /* Keep it above background but below other sections */
+    }
+
+    .about-area-6-inner {
+      padding: 60px 0;       /* Add vertical padding to inner container */
+    }
+
+    /* Custom styling for Evidence-Informed Surgical Support */
+    .process-area .section-title,
+    .about-area-4 .section-title {
+      font-size: 48px;  /* Larger font size */
+      line-height: 1.2;  /* Comfortable line height */
+      margin-bottom: 30px;  /* Space below the title */
+      font-weight: 400;  /* Normal weight */
+    }
+
+    .process-area .section-subtitle,
+    .about-area-4 .section-subtitle {
+      font-size: 18px;  /* Subtitle size */
+      margin-bottom: 15px;  /* Space below subtitle */
+    }
+
+    /* Custom styling for GNN section title */
+    .video-area .section-title {
+      font-size: 48px;  /* Match Evidence-Informed Surgical Support size */
+      line-height: 1.2;  /* Comfortable line height */
+      margin-bottom: 30px;  /* Space below the title */
+      font-weight: 400;  /* Normal weight */
+    }
+
+    /* Hero section title styling */
+    .hero-area-5 .section-title {
+      font-size: 80px;  /* Larger hero title */
+      line-height: 1;   /* Tighter line height to maintain section size */
+      font-weight: 400; /* Normal weight */
+      margin-bottom: 30px;
+    }
+
+    /* Hide explore details buttons */
+    .hero-area-5 .btn-wrapper {
+      display: none; /* Hide the buttons completely */
+    }
+
+    /* Maintain section spacing but reduce bottom padding */
+    .hero-area-5 .section-content-wrapper {
+      padding: inherit;  /* Keep existing padding */
+      padding-bottom: 40px;  /* Reduced bottom padding */
+    }
+
+    .hero-area-5-inner.section-spacing {
+      padding-bottom: 60px;  /* Reduced section spacing */
+    }
+
+    /* Footer background styling */
+    .footer-area-2 {
+      position: relative;
+      background-color: #1a1a1a;  /* Dark background color */
+    }
+
+    .footer-area-2 .area-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.1;  /* Adjust the opacity of the background pattern */
+    }
+
+    /* Sticky header styling */
+    .header-sticky.sticky {
+      background-color: rgba(26, 26, 26, 0.95);  /* Dark semi-transparent background */
+      backdrop-filter: blur(10px);  /* Blur effect for glass morphism */
+      -webkit-backdrop-filter: blur(10px);  /* For Safari support */
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+    }
+
+    .header-sticky.sticky .header-logo img {
+      filter: brightness(0) invert(1);  /* Make logo white when sticky */
+    }
+
+    /* Subtitle decoration styling */
+    .section-subtitle:before {
+      background-color: #8ECAE6 !important;  /* Light blue color */
+      width: 10px;
+      height: 10px;
+      border-radius: 2px;
+    }
+    
+    /* Targeted fix for neurosurgery section only */
+    .service-area .services-wrapper-box .service-box-1:nth-child(3) .content {
+      overflow: visible !important;
+      height: auto !important;
+      min-height: auto !important;
+      padding-bottom: 50px !important;
+    }
+    
+    .service-area .services-wrapper-box .service-box-1:nth-child(3) .service-list {
+      margin-bottom: 30px !important;
+    }
+    
+    .service-area .services-wrapper-box .service-box-1:nth-child(3) .service-box-inner.body {
+      overflow: visible !important;
+      padding-bottom: 60px !important;
+    }
+
+    /* Make sure the decoration shows on light and dark backgrounds */
+    .section-subtitle.light:before {
+      background-color: #8ECAE6 !important;
+    }
+  </style>
+
+</head>
+
+
+<body class="body-wrapper body-marketing-agency">
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="container" class="container-preloader">
+      <div class="animation-preloader">
+        <div class="spinner"></div>
+
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+  </div>
+
+
+
+  <!-- Sroll to top -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+  </div>
+
+  <!-- side toggle start -->
+  <aside class="fix">
+    <div class="side-info">
+      <div class="side-info-content">
+        <div class="offset-widget offset-header">
+          <div class="offset-logo">
+            <a href="index.html">
+              <img src="assets/imgs/logo/logo.png" alt="site logo">
+            </a>
+          </div>
+          <button id="side-info-close" class="side-info-close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="mobile-menu d-xl-none fix"></div>
+        <div class="offset-info-box">
+          <h2 class="title">Contact Us</h2>
+          <div class="text-wrapper">
+            <p class="text">Want to learn more about our technology?</p>
+          </div>
+          <div class="t-btn-group">
+            <a class="t-btn t-btn-primary" href="mailto:hello@radielhealth.com">Email Us</a>
+          </div>
+        </div>
+        
+        <div class="offset-widget-box">
+          <div class="social-links">
+            <a href="https://x.com/HelloRadiel"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="offcanvas-overlay"></div>
+  <!-- side toggle end -->
+
+  <!-- search modal start -->
+  <div class="modal fade" id="search-template" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="search-template" aria-hidden="true">
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form action="#" class="form-search">
+            <input type="text" placeholder="Search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- search modal end -->
+
+  <!-- Header area start -->
+  <header class="header-area-5">
+    <div class="header-main header-sticky">
+      <div class="container large">
+        <div class="header-area-5-inner">
+          <div class="header-logo">
+            <a href="index.html">
+              <img src="assets/imgs/logo/logo-light.png" class="normal-logo" alt="Site Logo">
+            </a>
+          </div>
+          <div class="header-nav">
+            <nav class="main-menu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#tech">Tech</a></li>
+                <li><a href="#medical-impact">Medicine</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-button">
+            <div class="t-btn-group">
+              <a class="t-btn t-btn-circle" href="mailto:hello@radielhealth.com">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a class="t-btn t-btn-primary" href="mailto:hello@radielhealth.com">Let's Connect</a>
+              <a class="t-btn t-btn-circle" href="mailto:hello@radielhealth.com">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="header-offcanvas d-xl-none">
+            <button class="side-toggle">
+              <i class="fa-solid fa-bars"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header area end -->
+
+  <div class="has-smooth" id="has_smooth"></div>
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+
+
+
+      <main>
+
+        <!-- hero area stat  -->
+        <section class="hero-area-5">
+          <div class="area-bg">
+            <img src="assets/imgs/shape/radiel_background.png" alt="image">
+    
+            <div class="dots">
+    
+            </div>
+          </div>
+          <div class="container large">
+            <div class="hero-area-5-inner section-spacing">
+              <div class="section-content-wrapper section-spacing-top">
+                <div class="social-links">
+                  <a href="https://x.com/HelloRadiel"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="section-content">
+                  <div class="section-title-wrapper">
+                    <div class="subtitle-wrapper">
+                      <span class="section-subtitle char-anim" data-delay="0.60">Radiel Health</span>
+                    </div>
+                    <div class="title-wrapper fade-anim" data-delay="0.75">
+                      <h1 class="section-title">Computational<br>Surgical<br><span style="background: linear-gradient(to right, #A9D6E5, #468FAF); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Foresight</span></h1>
+                    </div>
+                  </div>
+                  <div class="text-wrapper fade-anim" data-delay="0.90">
+                    <p class="text">Run AI-powered CFD simulations to test surgical and interventional strategies—find the safest, most effective, and hemodynamically sound option in minutes.</p>
+                  </div>
+                  <div class="btn-wrapper fade-anim">
+                    <a class="t-btn t-btn-primary" href="mailto:hello@radielhealth.com">Explore Services</a>
+                  </div>
+                </div>
+                <div class="area-shape-image fade-anim" data-delay="1.20" data-direction="top" data-offset="100"
+                  data-ease="bounce">
+                  <div class="shape-1">
+ 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- hero area end  -->
+
+        <!-- about area start  -->
+        <section id="about" class="about-area-5">
+          <div class="container">
+            <div class="about-area-5-inner section-spacing">
+              <div class="section-content-wrapper">
+                <div class="content-first fade-anim" data-direction="right">
+                  <div class="subtitle-wrapper">
+                    <span class="section-subtitle">About Us</span>
+                  </div>
+                  <div class="content-shape-1">
+             
+                  </div>
+                </div>
+                <div class="section-content fade-anim" data-direction="left">
+                  <div class="section-title-wrapper">
+                    <div class="title-wrapper">
+                      <h2 class="section-title">We help clinicians in interventional and surgical medicine transform clinical questions into fast, physics-based simulations—bringing hemodynamics into the heart of decision-making to improve outcomes. </h2>
+                    </div>
+                  </div>
+                  <!-- Removing About Us button wrapper -->
+                </div>
+              </div>
+
+              <!-- process area start  -->
+        <section class="process-area page-services">
+          <div class="process-area-inner section-spacing">
+            <div class="container">
+              <div class="section-header">
+                <div class="section-title-wrapper">
+                  <!-- <div class="subtitle-wrapper fade-anim">
+                    <span class="section-subtitle">About Us</span>
+                  </div> -->
+                  <div class="title-wrapper fade-anim">
+                    <h2 class="section-title">Evidence-Informed Surgical Support</h2>
+                  </div>
+                </div>
+                <div class="btn-wrapper fade-anim">
+                  <div class="t-btn-group">
+    
+                    </a>
+
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>            <div class="process-wrapper-box fade-anim">
+              <div class="container">
+                <div class="process-wrapper">
+                  <div class="process-box-1 fade-anim">
+                    <span class="number">01</span>
+                    <div class="thumb">
+                      <img src="assets/imgs/icon/icon-1.webp" alt="image">
+                    </div>
+                    <div class="content">
+                      <h3 class="title">Prevent Long-Term Complications</h3>
+                      <p class="text">We understand blood flow to identify procedures with decreased complications such as fibrosis.
+                        </p>
+                    </div>
+                  </div>
+                  <div class="process-box-1 fade-anim">
+                    <span class="number">02</span>
+                    <div class="thumb">
+                      <img src="assets/imgs/icon/icon-2.webp" alt="image">
+                    </div>
+                    <div class="content">
+                      <h3 class="title">Visualize Blood Flow for Patients</h3>
+                      <p class="text">By studying both anatomy and fluid behaviour across different interventions, we can personalize surgeries.</p>
+                    </div>
+                  </div>
+                  <div class="process-box-1 fade-anim">
+                    <span class="number">03</span>
+                    <div class="thumb">
+                      <img src="assets/imgs/icon/icon-3.webp" alt="image">
+                    </div>
+                    <div class="content">
+                      <h3 class="title">Optimize Placement Sites for Interventions</h3>
+                      <p class="text">We support surgical design by flagging the vascular access sites most likely to optimize patency.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- process area end  -->
+   
+            </div>
+          </div>
+        </section>
+        <!-- about area end  -->
+     <!-- video area start  -->
+     <section id="tech" class="video-area fade-anim">
+      <div class="area-bg">
+        <img src="assets/imgs/shape/tech_background.png" alt="image" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+      </div>
+      <div class="container">
+        <div class="video-area-inner section-spacing">
+          <div class="section-content">
+            <div class="section-title-wrapper">
+              <div class="subtitle-wrapper fade-anim">
+                <span class="section-subtitle" style="color: #FFFFFF;">Our Technology</span>
+              </div>
+              <div class="title-wrapper fade-anim ">
+                <h2 class="section-title">We use AI to predict CFD data & speed up simulations.
+                  </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- video area end  -->
+        <!-- services area start  -->
+        <section class="service-area-5 fade-anim">
+          <div class="container">
+            <div class="service-area-5-inner section-spacing-top">
+              <div class="section-header">
+                <div class="section-title-wrapper fade-anim">
+                  <div class="subtitle-wrapper">
+                    <span class="section-subtitle">Our Technology</span>
+                  </div>
+                </div>
+                <div class="btn-wrapper fade-anim">
+                  <div class="t-btn-group">
+                    <a class="t-btn t-btn-circle" href="mailto:hello@radielhealth.com">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a class="t-btn t-btn-primary" href="mailto:hello@radielhealth.com">Our Services</a>
+                    <a class="t-btn t-btn-circle" href="mailto:hello@radielhealth.com">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="services-wrapper-box fade-anim">
+                <div class="services-wrapper">
+                  <div class="area-bg">
+                    <img src="assets/imgs/shape/tech_background.jpg" alt="image">
+                  </div>
+                  <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <div class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+                        <div class="service-name">
+                          <h2 class="title">Computational Fluid Dynamics (CFD) <span class="number">/01</span></h2>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <div class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                        role="tab" aria-controls="pills-profile" aria-selected="false">
+                        <div class="service-name">
+                          <h2 class="title">Graph Neural Networks (GNNs) <span class="number">/02</span></h2>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <div class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                        role="tab" aria-controls="pills-contact" aria-selected="false">
+                        <div class="service-name">
+                          <h2 class="title">Radiology-Guided CFD Pipeline<span class="number">/03</span></h2>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <div class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-disabled" role="tab" aria-controls="pills-disabled"
+                        aria-selected="false">
+                        <div class="service-name">
+                          <h2 class="title">Physics Residuals & Error Analysis<span class="number">/04</span></h2>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                      aria-labelledby="pills-home-tab" tabindex="0">
+                      <div class="service-box-5">
+                        <div class="area-bg">
+                          <img src="assets/imgs/shape/shape-33.webp" alt="image">
+                        </div>
+                        <div class="thumb">
+                          <img src="assets/imgs/icon/icon-10.webp" alt="image">
+                        </div>
+                        <div class="content">
+                          <h3 class="title">Computational Fluid Dynamics</h3>
+                          <p class="text">We run CFD simulations in vascular, cardiac and neurovascular interventions to build training datasets for our AI models. We are studying the following metrics: </p>
+                          <div class="feature-list">
+                            <ul>
+                              <li>Wall Shear Stress (WSS)</li>
+                              <li>Oscillatory Shear Index (OSI)</li>
+                              <li>Time Averaged Wall Shear Stress (TAWSS)</li>
+                              <li>Energy Loss</li>
+                            </ul>
+                          </div>
+                          <!-- Removing "View Details" button -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                      tabindex="0">
+                      <div class="service-box-5">
+                        <div class="area-bg">
+                          <img src="assets/imgs/shape/shape-33.webp" alt="image">
+                        </div>
+                        <div class="thumb">
+                          <img src="assets/imgs/icon/icon-28.webp" alt="image">
+                        </div>
+                        <div class="content">
+                          <h3 class="title">Graph Neural Networks (GNNs)</h3>
+                          <p class="text">GNNs are AI models where nodes and edges represent blood vessel anatomy and flow. These help capture how vessel structure influences blood dynamics and:</p>
+                          <div class="feature-list">
+                            <ul>
+                              <li>Obtain CFD data without long simulations</li>
+                              <li>Get real-time predictions of blood flow</li>
+                              <li>Personlize interventions</li>
+                              <li>Identify high risk complications</li>
+                            </ul>
+                          </div>
+                          <!-- Removing "View Details" button -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                      tabindex="0">
+                      <div class="service-box-5">
+                        <div class="area-bg">
+                          <img src="assets/imgs/shape/shape-33.webp" alt="image">
+                        </div>
+                        <div class="thumb">
+                          <img src="assets/imgs/icon/icon-29.webp" alt="image">
+                        </div>
+                        <div class="content">
+                          <h3 class="title">Radiology-Guided CFD Pipeline</h3>
+                          <p class="text">We streamline the process of using medical imaging for flow modeling. Our pipeline segments vessels and prepares them for simulation with minimal manual input.</p>
+                          <div class="feature-list">
+                            <ul>
+                              <li>Supports CT, MRI, ultrasound</li>
+                              <li>Automatic vessel segmentation</li>
+                              <li>Reconstructs 3D Models</li>
+                              <li>Uses filetypes already in the clinic</li>
+                            </ul>
+                          </div>
+                          <!-- Removing "View Details" button -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+                      tabindex="0">
+                      <div class="service-box-5">
+                        <div class="area-bg">
+                          <img src="assets/imgs/shape/shape-33.webp" alt="image">
+                        </div>
+                        <div class="thumb">
+                          <img src="assets/imgs/icon/icon-30.webp" alt="image">
+                        </div>
+                        <div class="content">
+                          <h3 class="title">Physics Residuals & Error Analysis</h3>
+                          <p class="text">We monitor the outputs our AI models generate and evaluate physics equations with them. This ensures our models are always grounded in physics.
+                          </p>
+                          <div class="feature-list">
+                            <ul>
+                              <li>Navier-Stokes Equations</li>
+                              <li>Continuity Equation</li>
+                              <li>Momentum Equation</li>
+                              <li>Energy Equation</li>
+                            </ul>
+                          </div>
+                          <!-- Removing "View Details" button -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- services area end  -->
+
+                        <!-- about area start  -->
+                        <section id="medical-impact" class="about-area-4">
+                          <div class="container">
+                            <div class="about-area-4-inner section-spacing">
+                              <div class="section-content-wrapper">
+                                <div class="thumb fade-anim" data-direction="left">
+                                  <img src="assets/imgs/shape/shape-23.webp" alt="image">
+                                </div>
+                                <div class="section-content">
+                                  <div class="section-title-wrapper fade-anim">
+                                    <div class="subtitle-wrapper">
+                                      <span class="section-subtitle">The Medical Impact</span>
+                                    </div>
+                                    <div class="title-wrapper">
+                                      <h2 class="section-title">Shaping the Future of Medicine</h2>
+                                    </div>
+                                  </div>
+                                  <div class="text-wrapper fade-anim" data-direction="right">
+                                    <p class="text">We are passionate about using our AI models to improve patient outcomes.</p>
+                                    <p class="text">We anticipate that our models could be used in cardiothoracic surgery, vascular surgery, interventional radiology and neurovascular surgery. Scroll further to learn more.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                        <!-- about area end  -->
+          <!-- about area start  -->
+          <div class="about-area-6">
+            <div class="about-area-6-inner">
+              <div class="section-content fade-anim">
+                <div class="thumb thumb-3">
+                  <span class="brand-text">Vascular Surgery</span>
+                  <div class="image img_anim_reveal">
+                    <img src="assets/imgs/shape/avf.png" alt="image">
+                  </div>
+                </div>
+                <div class="thumb thumb-3">
+                  <span class="brand-text">Cardiac Surgery</span>
+                  <div class="image img_anim_reveal">
+                    <img src="assets/imgs/shape/cardio.png" alt="image">
+                  </div>
+                </div>
+                <div class="thumb thumb-3">
+                  <span class="brand-text">Neurosurgery</span>
+                  <div class="image img_anim_reveal">
+                    <img src="assets/imgs/shape/neurovas.png" alt="image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- about area end  -->
+
+        <!-- service area start  -->
+        <section class="service-area">
+          <div class="service-area-inner section-spacing-top">
+            <div class="container">
+              <div class="section-header">
+                <div class="section-title-wrapper fade-anim">
+                  <div class="subtitle-wrapper">
+                    <span class="section-subtitle">The Medical Impact</span>
+                  </div>
+                  <div class="title-wrapper">
+    
+                  </div>
+                </div>
+                <div class="btn-wrapper fade-anim">
+                  <div class="t-btn-group">
+                    <a class="t-btn t-btn-circle" href="mailto:hello@radielhealth.com">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a class="t-btn t-btn-primary" href="mailto:hello@radielhealth.com">See All Services</a>
+                    <a class="t-btn t-btn-circle" href="mailto:hello@radielhealth.com">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="services-wrapper-box">
+              <div class="services-wrapper header-stacking-items">
+                <div class="service-box-1 item">
+                  <div class="container">
+                    <div class="header">
+                      <div class="number">(01)</div>
+                      <h3 class="title">Vascular Surgery <span><img src="assets/imgs/shape/shape-50.webp" alt="image"></span></h3>
+                    </div>
+                    <div class="service-box-inner body">
+                      <div class="btn-wrapper">
+                        <div class="t-btn">
+                          <!-- Removed "Show Details" text -->
+                          <svg viewBox="0 0 123 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M7.67648 102.817L94.6863 16.8148H0.999996V0.999997H122V108.409H106V27.9975L18.9902 114L7.67648 102.817Z"
+                              stroke="#FFFFFF" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="content">
+                        <p class="text">This includes vascular access and stent placement. For example, AV Fistula & graft patency are based on blood flow. We predict the optimal site that allows for graft patency and demonstrate the estimated blood flow maps.</p>
+                        <ul class="service-list">
+                          <li>1. AV Fistula/Graft Patency Prediction</li>
+                          <li>2. Aortic Aneurysm Prediction</li>
+                          <li>3. Endovascular Stent Placement</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="service-box-1 item">
+                  <div class="container">
+                    <div class="header">
+                      <div class="number">(02)</div>
+                      <h3 class="title">Cardiac Surgery <span><img src="assets/imgs/shape/shape-50.webp" alt="image"></span>
+                      </h3>
+                    </div>
+                    <div class="service-box-inner body">
+                      <div class="btn-wrapper">
+                        <div class="t-btn">
+                          <!-- Removed "Show Details" text -->
+                          <svg viewBox="0 0 123 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M7.67648 102.817L94.6863 16.8148H0.999996V0.999997H122V108.409H106V27.9975L18.9902 114L7.67648 102.817Z"
+                              stroke="#FFFFFF" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="content">
+                        <p class="text">This includes high-risk cardiac procedures such as graft, valve placement and reconstructions. For example, in pediatric cases, we work on optimizing long-term flow in patients.</p>
+                        <ul class="service-list">
+                          <li>1.  Coronary Artery Bypass Graft (CABG) Flow</li>
+                          <li>2. Aortic Valve Replacement (AVR) Flow</a></li>
+                          <li>3. Fontan Circuit Optimization</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="service-box-1 item">
+                  <div class="container">
+                    <div class="header">
+                      <div class="number">(03)</div>
+                      <h3 class="title">Neurosurgery<span><img src="assets/imgs/shape/shape-50.webp" alt="image"></span>
+                      </h3>
+                    </div>
+                    <div class="service-box-inner body">
+                      <div class="btn-wrapper">
+                        <div class="t-btn">
+                          <!-- Removed "Show Details" text -->
+                          <svg viewBox="0 0 123 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M7.67648 102.817L94.6863 16.8148H0.999996V0.999997H122V108.409H106V27.9975L18.9902 114L7.67648 102.817Z"
+                              stroke="#FFFFFF" />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="content">
+                        <p class="text">This includes cerebrovascular procedures where personalized blood flow modeling can improve outcomes such as rupture prevention and long-term durability. Using AI and CFD, we support neurosurgeons in reducing uncertainty and enhancing surgical planning.</p>
+                        <ul class="service-list">
+                          <li>1. Intracranial Aneurysm Rupture Risk Prediction</li>
+                          <li>2. Flow Diversion and Stent Planning</li>
+                          <li>3. Arteriovenous Malformation (AVM) Flow Analysis</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="final"></div>
+          </div>
+        </section>
+        <!-- service area end  -->
+
+      </main>
+
+      <!-- footer area start  -->
+      <footer class="footer-area-2">
+        <div class="area-bg">
+          <img src="assets/imgs/shape/footer.png" alt="image">
+        </div>
+        <div class="cta-area fade-anim">
+          <div class="container">
+            <div class="cta-area-inner">
+              <div class="section-header">
+                <div class="section-title-wrapper fade-anim">
+                  <div class="subtitle-wrapper">
+                    <span class="section-subtitle">Pilot our Technology!</span>
+                  </div>
+                  <div class="title-wrapper">
+                    <h2 class="section-title">Connect for a Demo</h2>
+                  </div>
+                </div>
+                <div class="btn-wrapper fade-anim">
+                  <div class="t-btn-group">
+                    <a class="t-btn t-btn-circle" href="mailto:hello@radielhealth.com">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a class="t-btn t-btn-primary" href="mailto:hello@radielhealth.com">Contact Us</a>
+                    <a class="t-btn t-btn-circle" href="mailto:hello@radielhealth.com">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="footer-widget-wrapper-box">
+            <div class="footer-widget-wrapper">
+              <div class="footer-widget-box">
+                <div class="info-box">
+                  <div class="footer-logo">
+                    <a href="index.html"><img src="assets/imgs/logo/footer.png" alt="site logo"></a>
+                  </div>
+                  <div class="text-wrapper">
+                    <p class="text">Predictive blood flow for surgical planning.</p>
+                  </div>
+                  <div class="social-links">
+                    <a href="https://x.com/HelloRadiel"><i class="fa-brands fa-twitter"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-widget-box">
+
+                </ul>
+              </div>
+              <div class="footer-widget-box">
+      
+                </ul>
+              </div>
+              <div class="footer-widget-box">
+                <h2 class="title">Contact Us</h2>
+                <ul class="footer-nav-list contact">
+                  <li><span class="nav-title">Email Us</span><a href="mailto:hello@radielhealth.com">hello@radielhealth.com</a></li>
+                  <li><span class="nav-title">Locations</span>Brisbane, Australia<br> Toronto, Canada</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-area">
+          <div class="container">
+            <div class="copyright-area-inner">
+              <div class="copyright-text">
+                <p class="text">Copyright © 2025 <a href="#">Radiel Health</a>. 
+              </div>
+              <ul class="copyright-nav-list">
+     
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer area end  -->
+
+    </div>
+  </div>
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery-3.7.1.min.js"></script>
+  <script src="assets/vendor/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.magnific-popup.min.js"></script>
+  <script src="assets/vendor/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/counter.js"></script>
+  <script src="assets/vendor/progressbar.js"></script>
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/ScrollSmoother.min.js"></script>
+  <script src="assets/vendor/ScrollTrigger.min.js"></script>
+  <script src="assets/vendor/SplitText.min.js"></script>
+  <script src="assets/vendor/jquery.meanmenu.min.js"></script>
+  <script src="assets/vendor/jquery.nice-select.min.js"></script>
+  <script src="assets/vendor/backToTop.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>
+</html>
